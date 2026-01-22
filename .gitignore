@@ -1,0 +1,10 @@
+# Data
+*.h5
+*.hdf5
+*.sac
+data/
+outputs/
+
+# Model weights
+*.pth
+*.ckpt

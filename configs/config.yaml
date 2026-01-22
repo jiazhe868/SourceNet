@@ -1,0 +1,22 @@
+# configs/config.yaml
+# Default combinations: default to sourcenet model, synthetic data, pretrain mode
+defaults:
+  - _self_
+  - model: sourcenet
+  - data: synthetic
+  - training: pretrain
+  - override hydra/job_logging: default
+
+# General parameters
+seed: 42
+device: "cuda"  # or "cpu"
+model_path: null  
+output_dir: "${hydra:run.dir}"
+
+# Hydra configuration (logging paths)
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ./multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}

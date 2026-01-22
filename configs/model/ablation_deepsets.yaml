@@ -1,0 +1,6 @@
+# Inherit from base sourcenet but override aggregator
+defaults:
+  - sourcenet
+
+# Deepsets logic
+aggregator: deepsets

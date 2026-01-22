@@ -1,0 +1,22 @@
+# configs/training/finetune.yaml
+
+type: finetune
+
+epochs: 150
+patience: 50
+val_size: 0.15
+test_size: 0.15
+
+# Optimization (Differential Learning Rates)
+lr_backbone: 2e-6   # Slow updates for feature extractor
+lr_head: 2e-6       # Faster updates for regression heads
+weight_decay: 1e-4
+
+# Loss Function (Physics-Informed / Robust)
+loss: focal
+focal_gamma: 1.5    # Focus on hard examples
+
+# Transfer Learning
+# Point this to the output of the pretrain run or a fixed path
+pretrained_ckpt: "./best_sourcenet_pretrain.pth" 
+ckpt_name: "best_finetuned_model.pth"

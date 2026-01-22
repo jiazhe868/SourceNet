@@ -1,0 +1,15 @@
+# configs/model/sourcenet.yaml
+
+name: sourcenet
+
+# Station Encoder Params
+in_channels: 6              # P/S wave channels
+num_scalar_features: 20     # Dist, Az, amps, amp ratios, etc.
+
+# Transformer Params
+embed_dim: 128              # Maps to 'station_feature_dim'
+heads: 4                    # Maps to 'num_heads'
+layers: 3                   # Maps to 'num_layers'
+
+# Regularization
+dropout: 0.1

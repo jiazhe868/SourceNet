@@ -1,0 +1,18 @@
+# configs/training/pretrain.yaml
+
+type: pretrain
+
+epochs: 150
+patience: 30
+val_size: 0.1
+test_size: 0.1
+
+# Optimization
+lr: 2e-4
+weight_decay: 1e-5
+
+# Loss Function
+loss: mse
+
+# Checkpointing
+ckpt_name: "best_sourcenet_pretrain.pth"
