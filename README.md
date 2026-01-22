@@ -21,6 +21,12 @@ By combining a **Siamese 1D-ResNet** for local feature extraction with a **Trans
 
 ---
 
+## Models and Data
+
+Models and data are available upon request. 
+
+---
+
 ## 🛠️ Project Structure
 
 The project follows a modern `src`-layout for better packaging and testing isolation.
