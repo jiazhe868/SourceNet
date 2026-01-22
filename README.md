@@ -21,17 +21,6 @@ By combining a **Siamese 1D-ResNet** for local feature extraction with a **Trans
 
 ---
 
-## 🦁 Model Zoo
-
-Pre-trained models are provided to reproduce our results.
-
-| Model Variant | Training Data | Validation Loss | Description | Download |
-| :--- | :--- | :--- | :--- | :--- |
-| **SourceNet-Pretrain** | 100k Synthetic Events | 0.05 (MSE) | Base model trained on Green's function synthetics. | [Link](#) |
-| **SourceNet-Finetune** | SoCal Real Data | 0.31 (Focal) | Robust model fine-tuned on SCSN catalog. | [Link](#) |
-
----
-
 ## 🛠️ Project Structure
 
 The project follows a modern `src`-layout for better packaging and testing isolation.
