@@ -1,0 +1,15 @@
+# configs/data/real_socal.yaml
+
+name: real_socal_data
+path: "/dt3/zjia/temp_hdf5/socal_mxyz_data_rtz_lp2_ampr_ps_wlola.hdf5"
+
+# Loader Params
+batch_size: 64              # Smaller batch size for real data refinement
+num_workers: 16             # Adjust based on CPU load
+
+# Augmentation Strategy
+aug_params:
+  augmentation: true
+  max_stations: 50
+  min_stations_keep: 30     # Keep enough stations to maintain network geometry
+  noise_level: 0.03         # Gaussian noise injection for robustness

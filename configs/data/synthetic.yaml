@@ -1,0 +1,14 @@
+# configs/data/synthetic.yaml
+
+name: synthetic
+path: "/home/staff/zjia/zjia/temp_hdf5/syn_mt_data_realgeom_realvn_10w_ps_wcoda_wlola.hdf5"
+
+# Loader Params
+batch_size: 512
+num_workers: 32
+
+# Augmentation Strategy
+aug_params:
+  max_stations: 50
+  min_stations_keep: 30
+  noise_level: 0.01         # Additional Gaussian noise other than the real noise for synthetic training.
