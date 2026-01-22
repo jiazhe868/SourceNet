@@ -59,7 +59,7 @@ SourceNet/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/SourceNet.git
+    git clone <this_path>/SourceNet.git
     cd SourceNet
     ```
 
