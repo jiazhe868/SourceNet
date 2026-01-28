@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
 from typing import Tuple, Union, Dict, Any
-from omegaconf import DictConfig, OmegaConf # 引入 OmegaConf
+from omegaconf import DictConfig, OmegaConf 
 
 from .components import ResidualBlock1D
 
